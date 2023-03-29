@@ -1,3 +1,26 @@
 nav {
-    background-color: cadetblue;    
+    background-color: rgb(248, 186, 186);    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid black;
 }
+nav img {
+    flex: 1;
+    height: 100px;
+    width: 150px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links li {
+    font-size: 20px;
+    margin-right:  40px;
+    list-style: none;
+} 

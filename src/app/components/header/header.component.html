@@ -1,13 +1,11 @@
 <nav>
-<ul>
-    <li>
+    <a routerLink="/"><img src="/assets/860157.png" alt="Logo"></a>
+    <h2>Cinemas</h2>
+<ul class="links">
         <!-- **Usa-se routerLink pq ele somente dá reload na área controlada pelo router
-            **Já o href, recarrega a página inteira
-        -->
-        <a routerLink="/">Home</a>
-    </li>
-    <li>
-        <a routerLink="/about">Sobre</a>
-    </li>
+            **Já o href, recarrega a página inteira-->
+    <li><a routerLink="/">Home</a></li>
+    <li id="add-cinema"><a routerLink="/cinema/new">Cinemas</a></li>
+    <li><a routerLink="/about">Sobre</a></li>
 </ul>
 </nav>
