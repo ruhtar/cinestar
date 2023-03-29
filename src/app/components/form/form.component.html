@@ -18,21 +18,21 @@
         <input id="cpf" type="text" placeholder="Informe o CPF" 
         formControlName="cpfControlName" required>
     </div>
-    <div *ngIf="cpfControlName.invalid && formDir.submitted" class="validation-error"><p *ngIf="ownerNameControlName.errors?.['required']">CPF obrigatório</p></div>
+    <div *ngIf="cpfControlName.invalid && formDir.submitted" class="validation-error"><p *ngIf="cpfControlName.errors?.['required']">CPF obrigatório</p></div>
 
     <div class="form-answers">
         <label for="cinema-name">Nome do cinema: </label>
         <input id="cinema-name" type="text" placeholder="Informe o nome do cinema" 
         formControlName="cinemaNameControlName" required>
     </div>
-    <div *ngIf="cinemaNameControlName.invalid && formDir.submitted" class="validation-error"><p *ngIf="ownerNameControlName.errors?.['required']">Nome obrigatório</p></div>
+    <div *ngIf="cinemaNameControlName.invalid && formDir.submitted" class="validation-error"><p *ngIf="cinemaNameControlName.errors?.['required']">Nome obrigatório</p></div>
 
     <div class="form-answers">
         <label for="street">Rua: </label>
         <input id="street" type="text" placeholder="Informe o local" 
         formControlName="streetControlName" required>
     </div>
-    <div *ngIf="streetControlName.invalid && formDir.submitted" class="validation-error"><p *ngIf="ownerNameControlName.errors?.['required']">Endereço obrigatório</p></div>
+    <div *ngIf="streetControlName.invalid && formDir.submitted" class="validation-error"><p *ngIf="streetControlName.errors?.['required']">Endereço obrigatório</p></div>
 
     <div class="form-answers">
         <label for="">Descrição: </label>

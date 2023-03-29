@@ -16,4 +16,8 @@ input::placeholder {
     font-size: 20px; /* tamanho desejado para o placeholder */
 }
 
+.validation-error p {
+    color: red;
+}
+
 
