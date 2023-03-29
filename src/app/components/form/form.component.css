@@ -1,9 +1,11 @@
 label{
     font-size: 20px;
 }
+.form-answer{
+    margin-bottom: 20px;
+}
 input{
     height: 32px;
-    margin-bottom: 20px;
 }
 
 textarea{

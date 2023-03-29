@@ -15,23 +15,23 @@ export class FormComponent {
   constructor(){
   }
 
-  ngOnInit(){
+  ngOnInit():void{
     this.cinemaForm = new FormGroup({
       id: new FormControl(""),
-      ownerName: new FormControl("", [Validators.required]),
-      cinemaName: new FormControl("", [Validators.required]),
-      street: new FormControl("", [Validators.required]),
-      cpf: new FormControl("", [Validators.required]),
-      description: new FormControl("")
+      ownerNameControlName: new FormControl("", [Validators.required]),
+      cpfControlName: new FormControl("", [Validators.required]),
+      cinemaNameControlName: new FormControl("", [Validators.required]),
+      streetControlName: new FormControl("", [Validators.required]),
+      descriptionControlName : new FormControl()
     });
   }
 
-  get ownerNameControlname(){
-    return this.cinemaForm.get("ownerNameControlname")!;
+  get ownerNameControlName(){
+    return this.cinemaForm.get("ownerNameControlName")!;
   }
   
-  get cpfControlname(){
-    return this.cinemaForm.get("cpfControlname")!;
+  get cpfControlName(){
+    return this.cinemaForm.get("cpfControlName")!;
   }
 
   get cinemaNameControlName(){
