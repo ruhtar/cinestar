@@ -1,14 +1,15 @@
 header {
     color: transparent;
     font-size: 55px;
-    background-image: linear-gradient(to left, #553c9a, #b393d3);
+    /* background-image: linear-gradient(to bottom, #fa6464, #fcd6d6); */
+    background-color: #f69a9a;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     width: 100%;
-    border-bottom: 1px solid black;
 }
+
 
 
 .links {

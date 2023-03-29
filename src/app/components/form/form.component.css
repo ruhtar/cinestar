@@ -1,0 +1,12 @@
+label{
+    font-size: 20px;
+}
+input{
+    height: 32px;
+    margin-bottom: 20px;
+}
+input::placeholder {
+    font-size: 20px; /* tamanho desejado para o placeholder */
+}
+
+

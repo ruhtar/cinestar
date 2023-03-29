@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+//Imports
+import {HttpClientModule} from "@angular/common/http"
+import {FormsModule, ReactiveFormsModule} from "@angular/forms"
 import { AppRoutingModule } from './app-routing.module';
+//
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -24,7 +28,7 @@ import { CinemasComponent } from './components/pages/cinemas/cinemas.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, HttpClientModule, ReactiveFormsModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
