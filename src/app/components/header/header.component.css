@@ -1,5 +1,7 @@
-nav {
-    background-color: rgb(248, 186, 186);    
+header {
+    color: transparent;
+    font-size: 55px;
+    background-image: linear-gradient(to left, #553c9a, #b393d3);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,20 +9,27 @@ nav {
     width: 100%;
     border-bottom: 1px solid black;
 }
-nav img {
-    flex: 1;
-    height: 100px;
-    width: 150px;
-}
+
 
 .links {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .links li {
     font-size: 20px;
+    font-weight: bold;
     margin-right:  40px;
     list-style: none;
 } 
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+a:hover{
+    font-size: 22px;
+    color: white;
+  }

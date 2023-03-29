@@ -6,13 +6,16 @@
   color: black;
   
 }
-a {
-  text-decoration: none;
-  color: black;
-  transition: 0.4s;
+
+
+/* FORMS: reaproveitados, por isso são estilizados no escopo global */
+
+form{
+  width: 450px;
+  margin: 0 auto; /* Centralizando */
 }
 
-a:hover{
-  color: white;
+.form-answers {
+  display: flex;
+  flex-direction: column;
 }
-

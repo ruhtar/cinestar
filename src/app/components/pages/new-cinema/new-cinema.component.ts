@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./new-cinema.component.css']
 })
 export class NewCinemaComponent {
-
+    btnText = "Salvar"
 }
