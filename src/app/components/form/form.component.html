@@ -1,15 +1,42 @@
-<form>
+<!-- Diretiva ngSubmit -->
+<!-- Diretiva: formGroup indica ao angular um grupo de formulario para ele monitorar -->
+<!-- #formDir="ngForm" é uma sintaxepara criar referências locais para formulários e acessá-los. -->
+<form #formDir="ngForm" (ngSubmit)="submit()" [formGroup]="cinemaForm">
+
     <div class="form-answers">
-        <label for="name">Nome do cinema: </label>
-        <input id="name" type="text" placeholder="Informe o nome do cinema" required>
+        <label for="owner-name">Nome do proprietário: </label>
+        <input id="owner-name" type="text" placeholder="Informe o nome do proprietário" 
+        formControlName="ownerNameControlname" required>
     </div>
+    <!-- Div de validação: Renderização condicional -->
+    <div *ngIf="ownerNameControlname.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="ownerNameControlname.errors?.['required']">Nome obrigatório</p>
+    </div>
+
+    <div class="form-answers">
+        <label for="cpf">CPF: </label>
+        <input id="cpf" type="text" placeholder="Informe o CPF" 
+        formControlName="cpfControlname" required>
+    </div>
+    <div *ngIf="cpfControlname.invalid && formDir.submitted" class="validation-error"><p>CPF obrigatório</p></div>
+
+    <div class="form-answers">
+        <label for="cinema-name">Nome do cinema: </label>
+        <input id="cinema-name" type="text" placeholder="Informe o nome do cinema" 
+        formControlName="cinemaNameControlName" required>
+    </div>
+    <div *ngIf="cinemaNameControlName.invalid && formDir.submitted" class="validation-error"><p>Nome obrigatório</p></div>
+
     <div class="form-answers">
         <label for="street">Rua: </label>
-        <input id="street" type="text" placeholder="Informe o local" required>
+        <input id="street" type="text" placeholder="Informe o local" 
+        formControlName="streetControlName" required>
     </div>
+    <div *ngIf="streetControlName.invalid && formDir.submitted" class="validation-error"><p>Endereço obrigatório</p></div>
+
     <div class="form-answers">
-        <label for="">Número: </label>
-        <input type="number" placeholder="Número" required>
+        <label for="">Descrição: </label>
+        <textarea type="textarea" formControlName="descriptionControlName" required></textarea>
     </div>
     <input type="submit" value="{{btnText}}" id="submit-button">
 </form>
