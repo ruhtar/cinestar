@@ -1,17 +1,18 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { API_PATH } from 'src/environments/environment';
+import { ICinema } from '../interfaces/ICinema';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CinemaService {
 
-    
-  constructor(private http:HttpClient){
-  }
+    //Injeção de dependência
+  constructor(private http : HttpClient){}
 
-  get(){
-     return this.http.get("https://localhost:7062/cinemas");
-  }
+  getAll(){
+     return this.http.get<ICinema[]>(API_PATH + "/cinemas");
+  } 
 
 }

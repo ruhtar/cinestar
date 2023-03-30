@@ -1,5 +1,5 @@
 //Entidades
-export interface Cinema {
+export interface ICinema {
     id?: number, //opcional
     ownerName: string,
     cpf: string,

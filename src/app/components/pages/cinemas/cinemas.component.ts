@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Cinema } from 'src/app/interfaces/Cinema';
+import { ICinema } from 'src/app/interfaces/ICinema';
 import { CinemaService } from 'src/app/services/cinema.service';
 
 @Component({
@@ -9,8 +9,9 @@ import { CinemaService } from 'src/app/services/cinema.service';
 })
 export class CinemasComponent {
 
-  cinemas!: Cinema[];
+  cinemas!: ICinema[];
 
+  //Injeção de dependência
   constructor(private cinemaDataService: CinemaService){
   
   }
@@ -20,7 +21,7 @@ export class CinemasComponent {
   }
 
   get(){
-    this.cinemaDataService.get().subscribe((data : any)=>{
+    this.cinemaDataService.getAll().subscribe((data : any)=>{
       this.cinemas = data;
     }, error => {
      console.log(error);
