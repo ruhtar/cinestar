@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace api.Models
 {
+
   public class Cinema
   {
     public int Id { get; set; }

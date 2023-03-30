@@ -15,6 +15,10 @@ namespace api
       builder.Services.AddDbContext<ApplicationDbContext>(opts =>
           opts.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
+      builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+      {
+        builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+      }));
       // Add services to the container.
 
       builder.Services.AddControllers();
@@ -30,6 +34,7 @@ namespace api
         app.UseSwagger();
         app.UseSwaggerUI();
       }
+      app.UseCors("corsapp");
 
       app.UseHttpsRedirection();
 

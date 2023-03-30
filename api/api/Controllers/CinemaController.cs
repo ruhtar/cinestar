@@ -1,11 +1,13 @@
 using api.Data;
 using api.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controllers
 {
+  [AllowAnonymous]
   [ApiController]
-  [Route("")]
+  [Route("cinemas")]
   public class CinemaController : ControllerBase
   {
     private readonly ApplicationDbContext _context;

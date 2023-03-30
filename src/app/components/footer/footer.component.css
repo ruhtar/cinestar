@@ -4,9 +4,13 @@ footer {
     align-items: center;
     justify-content: center;
     height: 100px;
-    background-color: #fcd6d6;
+    background-color: black;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+h3,p{
+    color: yellow;
 }

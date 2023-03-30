@@ -1,8 +1,7 @@
 header {
-    color: transparent;
     font-size: 55px;
     /* background-image: linear-gradient(to bottom, #fa6464, #fcd6d6); */
-    background-color: #f69a9a;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,6 +9,9 @@ header {
     width: 100%;
 }
 
+header h2{
+    color: yellow;
+}
 
 
 .links {
@@ -27,7 +29,7 @@ header {
 } 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 247, 0);
     transition: 0.4s;
 }
 a:hover{
