@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7CIWU0DVDrfpYS7KpcJ88vkk1tA2pWyJLmPZIX3gymhMeumkn+pQP0GFQ+MmN12+hCiGYxJKk35wHTCwpm0SXw==",
+  "dgSpecHash": "hGsfeSALUTAdcgGd8Oxf1fUHAEnPm+U6b2HQOHIQS/MMgUWKlR0aMgJA7BVOiwtX8D8Wv+GFeVRrHjdd3q1e+Q==",
   "success": true,
   "projectFilePath": "D:\\PROGRAMAÇÃO\\Projetos\\viasoft-front\\api\\api\\api.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Arthur\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.15\\microsoft.entityframeworkcore.analyzers.6.0.15.nupkg.sha512",
     "C:\\Users\\Arthur\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.15\\microsoft.entityframeworkcore.design.6.0.15.nupkg.sha512",
     "C:\\Users\\Arthur\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.15\\microsoft.entityframeworkcore.relational.6.0.15.nupkg.sha512",
+    "C:\\Users\\Arthur\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.15\\microsoft.entityframeworkcore.tools.6.0.15.nupkg.sha512",
     "C:\\Users\\Arthur\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Arthur\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Arthur\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",

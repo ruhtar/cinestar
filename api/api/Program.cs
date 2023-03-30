@@ -1,3 +1,6 @@
+using api.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace api
 {
   public class Program
@@ -5,6 +8,12 @@ namespace api
     public static void Main(string[] args)
     {
       var builder = WebApplication.CreateBuilder(args);
+
+
+      var connectionString = builder.Configuration.GetConnectionString("CineConnection");
+
+      builder.Services.AddDbContext<ApplicationDbContext>(opts =>
+          opts.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
       // Add services to the container.
 
