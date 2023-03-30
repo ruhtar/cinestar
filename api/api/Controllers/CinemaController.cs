@@ -26,7 +26,7 @@ namespace api.Controllers
     {
       _context.Cinemas.Add(cinema);
       _context.SaveChanges();
-      return Ok("Cinema salvo");
+      return Ok(cinema);
     }
   }
 }

@@ -12,20 +12,20 @@ export class CinemasComponent {
   cinemas!: ICinema[];
 
   //Injeção de dependência
-  constructor(private cinemaDataService: CinemaService){
+  constructor(private cinemaDataService: CinemaService){}
+
+  ngOnInit(){this.getAll();}
+
+  getAll() {
+    try {
+      this.cinemaDataService.getAll().subscribe(
+        cinemas => this.cinemas = cinemas,
+      );
+    } catch (error) {
+      console.log(error);
+      alert("erro interno do sistema");
+    }
+  }
+
   
-  }
-
-  ngOnInit(){
-    this.get();
-  }
-
-  get(){
-    this.cinemaDataService.getAll().subscribe((data : any)=>{
-      this.cinemas = data;
-    }, error => {
-     console.log(error);
-     alert("erro interno do sistema")
-    })
-  }
 }
