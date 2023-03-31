@@ -21,6 +21,7 @@ namespace api.Controllers
     {
       return _context.Cinemas.ToList();
     }
+    [Route("/new")]
     [HttpPost]
     public ActionResult AddCinemas([FromBody] Cinema cinema)
     {

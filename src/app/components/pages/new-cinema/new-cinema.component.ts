@@ -9,16 +9,10 @@ import { CinemaService } from 'src/app/services/cinema.service';
 })
 export class NewCinemaComponent {
     btnText = "Salvar"
-    //Injeção de dependência
+    //InjeÃ§Ã£o de dependÃªncia
     constructor(private cinemaService: CinemaService){}
 
-    addCinema(){
-      const cinema : ICinema = {
-        ownerName: "Teste",
-        cpf: 'Teste',
-        cinemaName: 'teste',
-        street: 'teste'
-      }
-      this.cinemaService.addCinema(cinema);
-    }
+  async createHandler(cinema : ICinema){
+    await this.cinemaService.addCinema(cinema).subscribe();
+  }
 }

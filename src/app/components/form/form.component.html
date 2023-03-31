@@ -6,37 +6,37 @@
     <div class="form-answers">
         <label for="owner-name">Nome do proprietário: </label>
         <input id="owner-name" type="text" placeholder="Informe o nome do proprietário" 
-        formControlName="ownerNameControlName" required>
+        formControlName="ownerName" required>
     </div>
     <!-- Div de validação: Renderização condicional -->
-    <div *ngIf="ownerNameControlName.invalid && formDir.submitted" class="validation-error">
-        <p *ngIf="ownerNameControlName.errors?.['required']">Nome obrigatório</p>
+    <div *ngIf="ownerName.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="ownerName.errors?.['required']">Nome obrigatório</p>
     </div>
 
     <div class="form-answers">
         <label for="cpf">CPF: </label>
         <input id="cpf" type="text" placeholder="Informe o CPF" 
-        formControlName="cpfControlName" required>
+        formControlName="cpf" required>
     </div>
-    <div *ngIf="cpfControlName.invalid && formDir.submitted" class="validation-error"><p *ngIf="cpfControlName.errors?.['required']">CPF obrigatório</p></div>
+    <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error"><p *ngIf="cpf.errors?.['required']">CPF obrigatório</p></div>
 
     <div class="form-answers">
         <label for="cinema-name">Nome do cinema: </label>
         <input id="cinema-name" type="text" placeholder="Informe o nome do cinema" 
-        formControlName="cinemaNameControlName" required>
+        formControlName="cinemaName" required>
     </div>
-    <div *ngIf="cinemaNameControlName.invalid && formDir.submitted" class="validation-error"><p *ngIf="cinemaNameControlName.errors?.['required']">Nome obrigatório</p></div>
+    <div *ngIf="cinemaName.invalid && formDir.submitted" class="validation-error"><p *ngIf="cinemaName.errors?.['required']">Nome obrigatório</p></div>
 
     <div class="form-answers">
         <label for="street">Rua: </label>
         <input id="street" type="text" placeholder="Informe o local" 
-        formControlName="streetControlName" required>
+        formControlName="street" required>
     </div>
-    <div *ngIf="streetControlName.invalid && formDir.submitted" class="validation-error"><p *ngIf="streetControlName.errors?.['required']">Endereço obrigatório</p></div>
+    <div *ngIf="street.invalid && formDir.submitted" class="validation-error"><p *ngIf="street.errors?.['required']">Endereço obrigatório</p></div>
 
     <div class="form-answers">
         <label for="">Descrição: </label>
-        <textarea type="textarea" formControlName="descriptionControlName" required></textarea>
+        <textarea type="textarea" formControlName="description" required></textarea>
     </div>
     <input type="submit" value="{{btnText}}" id="submit-button">
 </form>

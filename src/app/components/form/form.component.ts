@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ICinema } from 'src/app/interfaces/ICinema';
 
 @Component({
   selector: 'app-form',
@@ -8,6 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class FormComponent {
   @Input() btnText!: string;
+  @Output() onSubmit = new EventEmitter<ICinema>();
 
   cinemaForm!: FormGroup
 
@@ -17,32 +19,33 @@ export class FormComponent {
 
   ngOnInit():void{
     this.cinemaForm = new FormGroup({
-      id: new FormControl(""),
-      ownerNameControlName: new FormControl("", [Validators.required]),
-      cpfControlName: new FormControl("", [Validators.required]),
-      cinemaNameControlName: new FormControl("", [Validators.required]),
-      streetControlName: new FormControl("", [Validators.required]),
-      descriptionControlName : new FormControl()
+
+      ownerName: new FormControl("", [Validators.required]),
+      cpf: new FormControl("", [Validators.required]),
+      cinemaName: new FormControl("", [Validators.required]),
+      street: new FormControl("", [Validators.required]),
+      description : new FormControl()
     });
   }
 
-  get ownerNameControlName(){
-    return this.cinemaForm.get("ownerNameControlName")!;
+  get ownerName(){
+    return this.cinemaForm.get("ownerName")!;
   }
   
-  get cpfControlName(){
-    return this.cinemaForm.get("cpfControlName")!;
+  get cpf(){
+    return this.cinemaForm.get("cpf")!;
   }
 
-  get cinemaNameControlName(){
-    return this.cinemaForm.get("cinemaNameControlName")!;
+  get cinemaName(){
+    return this.cinemaForm.get("cinemaName")!;
   }  
   
-  get streetControlName(){
-    return this.cinemaForm.get("streetControlName")!;
+  get street(){
+    return this.cinemaForm.get("street")!;
   }
   
   submit(){
-    console.log("enviou");
+    console.log(this.cinemaForm.value);
+    this.onSubmit.emit(this.cinemaForm.value);
   }
 }
