@@ -1,6 +1,6 @@
-//Entidades
+//Entidade
 export interface ICinema {
-    id?: number, //opcional
+    id?: number, 
     ownerName: string,
     cpf: number,
     cinemaName: string,

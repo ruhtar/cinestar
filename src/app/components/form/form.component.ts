@@ -8,8 +8,8 @@ import { ICinema } from 'src/app/interfaces/ICinema';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
-  @Input() btnText!: string;
-  @Output() onSubmit = new EventEmitter<ICinema>();
+  @Input() btnText!: string; //Entrada. O componente filho recebe os dados. 
+  @Output() onSubmit = new EventEmitter<ICinema>(); //Saída. Enviar dados para o componente pai
 
   cinemaForm!: FormGroup
 

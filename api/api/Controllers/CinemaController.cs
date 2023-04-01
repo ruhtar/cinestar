@@ -2,6 +2,7 @@ using api.Data;
 using api.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace api.Controllers
 {
@@ -25,9 +26,22 @@ namespace api.Controllers
     [HttpPost]
     public ActionResult AddCinemas([FromBody] Cinema cinema)
     {
+      var cinemaExists = this.GetCinemaByName(cinema.CinemaName);
+      if (cinemaExists != null) return BadRequest("Esse cinema já foi registrado.");
       _context.Cinemas.Add(cinema);
       _context.SaveChanges();
       return Ok(cinema);
+    }
+    [HttpGet("{nomeCinema}/{nomeCliente}")]
+    public ActionResult<Cinema> GetCinemaByName(string CinemaName)
+    {
+      var entidade = _context.Cinemas
+          .FromSqlInterpolated($"SELECT * FROM Cinemas WHERE CinemaName = {CinemaName}")
+          .FirstOrDefault();
+
+      if (entidade == null) return NotFound();
+      
+      return Ok(entidade);
     }
   }
 }

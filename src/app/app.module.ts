@@ -14,6 +14,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { NewCinemaComponent } from './components/pages/new-cinema/new-cinema.component';
 import { FormComponent } from './components/form/form.component';
 import { CinemasComponent } from './components/pages/cinemas/cinemas.component';
+import { ClientPageComponent } from './components/pages/client-page/client-page.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,10 @@ import { CinemasComponent } from './components/pages/cinemas/cinemas.component';
     HeaderComponent,
     FooterComponent,
     AboutComponent,
-    HomeComponent,
     NewCinemaComponent,
     FormComponent,
-    CinemasComponent
+    CinemasComponent,
+    ClientPageComponent
   ],
   imports: [
     BrowserModule,
