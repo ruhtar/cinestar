@@ -39,6 +39,7 @@
         <label for="">Descrição: </label>
         <textarea type="textarea" formControlName="description"></textarea>
     </div>
-    <input type="submit" value="{{btnText}}" id="submit-button" >
+    <input type="submit" value="{{btnText}}" class="submit-button" >
+    <div *ngIf="formSucess" class="form-sucess"><p> Cadastro realizado com sucesso!</p></div>
 </form>
  

@@ -15,6 +15,7 @@ import { NewCinemaComponent } from './components/pages/new-cinema/new-cinema.com
 import { FormComponent } from './components/form/form.component';
 import { CinemasComponent } from './components/pages/cinemas/cinemas.component';
 import { ClientPageComponent } from './components/pages/client-page/client-page.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ClientPageComponent } from './components/pages/client-page/client-page.
     NewCinemaComponent,
     FormComponent,
     CinemasComponent,
-    ClientPageComponent
+    ClientPageComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

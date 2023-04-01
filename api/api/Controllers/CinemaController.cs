@@ -43,5 +43,43 @@ namespace api.Controllers
       
       return Ok(entidade);
     }
+
+    [Route("{id}")]
+    [HttpPut]
+    public ActionResult UpdateCinema(int id, [FromBody] Cinema updatedCinema)
+    {
+      var cinemaToUpdate = _context.Cinemas.FirstOrDefault(c => c.Id == id);
+      if (cinemaToUpdate == null)
+      {
+        return NotFound();
+      }
+
+        cinemaToUpdate.OwnerName = updatedCinema.OwnerName;
+        cinemaToUpdate.CPF = updatedCinema.CPF;
+        cinemaToUpdate.CinemaName = updatedCinema.CinemaName;
+        cinemaToUpdate.Street = updatedCinema.Street;
+        cinemaToUpdate.Description = updatedCinema.Description;
+      _context.Update(cinemaToUpdate);
+      _context.SaveChanges();
+
+      return Ok(cinemaToUpdate);
+    }
+
+    [Route("{id}")]
+    [HttpDelete]
+    public ActionResult DeleteCinema(int id)
+    {
+      var cinemaToDelete = _context.Cinemas.FirstOrDefault(c => c.Id == id);
+      if (cinemaToDelete == null)
+      {
+        return NotFound();
+      }
+
+      _context.Cinemas.Remove(cinemaToDelete);
+      _context.SaveChanges();
+
+      return Ok();
+    }
+
   }
 }

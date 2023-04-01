@@ -13,6 +13,7 @@ export class FormComponent {
   @Output() onSubmit = new EventEmitter<ICinema>(); //Sa�da. Enviar dados para o componente pai
 
   cinemaForm!: FormGroup
+  formSucess: boolean = false;
 
   constructor(private formBuilder: FormBuilder){
     this.cinemaForm = this.formBuilder.group({
@@ -45,8 +46,9 @@ export class FormComponent {
   }
   
   submit(){
-    if(this.cinemaForm.invalid) return alert("Formulário inválido")
+    if(this.cinemaForm.invalid) return
     console.log(this.cinemaForm.value);
     this.onSubmit.emit(this.cinemaForm.value);
+    this.formSucess = true; 
   }
 }

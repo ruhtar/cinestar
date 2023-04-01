@@ -5,8 +5,10 @@ label{
     margin-bottom: 20px;
 }
 input{
-    height: 32px;
+    height: 40px;
 }
+
+
 
 textarea{
     resize: none;
@@ -20,4 +22,24 @@ input::placeholder {
     color: red;
 }
 
+.submit-button {
+    height: 40px;
+    width: 80px;
+    font-size: 14pt;
+    background-color: yellow;
+    color: black;
+    font-weight: 600;
+    transition: 0.4s;
+    border-radius: 10px;
+}
 
+.submit-button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: yellow;
+}
+
+.form-sucess p{
+    margin-top: 8px;
+    color: green;
+}
