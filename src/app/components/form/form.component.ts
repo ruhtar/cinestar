@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ICinema } from 'src/app/interfaces/ICinema';
+import { cpfValidator } from 'src/app/validators/cpf-validator';
 
 @Component({
   selector: 'app-form',
@@ -9,23 +10,22 @@ import { ICinema } from 'src/app/interfaces/ICinema';
 })
 export class FormComponent {
   @Input() btnText!: string; //Entrada. O componente filho recebe os dados. 
-  @Output() onSubmit = new EventEmitter<ICinema>(); //Sa�da. Enviar dados para o componente pai
+  @Output() onSubmit = new EventEmitter<ICinema>(); //Sa�da. Enviar dados para o componente pai
 
   cinemaForm!: FormGroup
 
-
-  constructor(){
-  }
-
-  ngOnInit():void{
-    this.cinemaForm = new FormGroup({
-
+  constructor(private formBuilder: FormBuilder){
+    this.cinemaForm = this.formBuilder.group({
       ownerName: new FormControl("", [Validators.required]),
-      cpf: new FormControl("", [Validators.required]),
+      cpf: new FormControl("", Validators.compose([Validators.required, cpfValidator])),
       cinemaName: new FormControl("", [Validators.required]),
       street: new FormControl("", [Validators.required]),
       description : new FormControl()
     });
+  }
+
+  ngOnInit():void{
+    
   }
 
   get ownerName(){
@@ -45,6 +45,7 @@ export class FormComponent {
   }
   
   submit(){
+    if(this.cinemaForm.invalid) return alert("Formulário inválido")
     console.log(this.cinemaForm.value);
     this.onSubmit.emit(this.cinemaForm.value);
   }

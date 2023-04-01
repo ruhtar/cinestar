@@ -20,7 +20,7 @@ export class CinemaService {
   }
 
   getByName(cinema: ICinema){
-    return this.http.get<ICinema>(API_PATH + "/client-page" + );
+    return this.http.get<ICinema>(API_PATH + "/client-page");
   }
 
 }

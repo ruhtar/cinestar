@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hGsfeSALUTAdcgGd8Oxf1fUHAEnPm+U6b2HQOHIQS/MMgUWKlR0aMgJA7BVOiwtX8D8Wv+GFeVRrHjdd3q1e+Q==",
+  "dgSpecHash": "AlSTwJEXIEDpMyAxCyvUzfjUeCJqD0I9/XUZHgVVwZY8S4ODiVDp2UPBH8IVcHyS+/5shOUSargLtvwGQU6NOg==",
   "success": true,
-  "projectFilePath": "D:\\PROGRAMAÇÃO\\Projetos\\viasoft-front\\api\\api\\api.csproj",
+  "projectFilePath": "D:\\PROGRAMAÇÃO\\Testes práticos\\projeto-angular\\api\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Arthur\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Arthur\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.15\\microsoft.entityframeworkcore.6.0.15.nupkg.sha512",

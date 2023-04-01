@@ -40,3 +40,45 @@ D:\PROGRAMAÇÃO\Projetos\viasoft-front\api\api\obj\Debug\net6.0\refint\api.dll
 D:\PROGRAMAÇÃO\Projetos\viasoft-front\api\api\obj\Debug\net6.0\api.pdb
 D:\PROGRAMAÇÃO\Projetos\viasoft-front\api\api\obj\Debug\net6.0\api.genruntimeconfig.cache
 D:\PROGRAMAÇÃO\Projetos\viasoft-front\api\api\obj\Debug\net6.0\ref\api.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\appsettings.Development.json
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\appsettings.json
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\api.exe
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\api.deps.json
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\api.runtimeconfig.json
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\api.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\api.pdb
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Humanizer.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\MySqlConnector.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\api.csproj.AssemblyReference.cache
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\api.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\api.AssemblyInfoInputs.cache
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\api.AssemblyInfo.cs
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\api.csproj.CoreCompileInputs.cache
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\api.MvcApplicationPartsAssemblyInfo.cs
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\api.MvcApplicationPartsAssemblyInfo.cache
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\staticwebassets\msbuild.api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\staticwebassets\msbuild.build.api.props
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.api.props
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.api.props
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\staticwebassets.pack.json
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\staticwebassets.build.json
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\staticwebassets.development.json
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\scopedcss\bundle\api.styles.css
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\api.csproj.CopyComplete
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\api.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\refint\api.dll
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\api.pdb
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\api.genruntimeconfig.cache
+D:\PROGRAMAÇÃO\Testes práticos\projeto-angular\api\api\obj\Debug\net6.0\ref\api.dll

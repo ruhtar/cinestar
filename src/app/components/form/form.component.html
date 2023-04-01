@@ -19,6 +19,7 @@
         formControlName="cpf" required>
     </div>
     <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error"><p *ngIf="cpf.errors?.['required']">CPF obrigatório</p></div>
+    <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error"><p *ngIf="cpf.errors?.['cpfInvalido']" > CPF inválido</p></div>
 
     <div class="form-answers">
         <label for="cinema-name">Nome do cinema: </label>
@@ -36,8 +37,8 @@
 
     <div class="form-answers">
         <label for="">Descrição: </label>
-        <textarea type="textarea" formControlName="description" required></textarea>
+        <textarea type="textarea" formControlName="description"></textarea>
     </div>
-    <input type="submit" value="{{btnText}}" id="submit-button">
+    <input type="submit" value="{{btnText}}" id="submit-button" >
 </form>
  
