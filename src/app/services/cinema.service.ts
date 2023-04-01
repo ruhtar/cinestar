@@ -23,4 +23,7 @@ export class CinemaService {
     return this.http.get<ICinema>(API_PATH + "/client-page");
   }
 
+  update(cinema : ICinema){
+    return this.http.put(API_PATH + + `/new/${cinema.id}`, cinema)
+  }
 }
