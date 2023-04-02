@@ -21,7 +21,6 @@
         </thead>
         <tbody>
           <tr *ngFor="let cinema of cinemas">
-            <td>{{ cinema.id }}</td>
             <td>{{ cinema.cinemaName }}</td>
             <td>
               <span class="float-right">
@@ -29,7 +28,7 @@
                   Atualizar
                 </button>
   
-                <button class="btn btn-outline-danger mb-1 btn-sm" >
+                <button class="btn btn-outline-danger mb-1 btn-sm" (click)="delete(cinema)" >
                   Remover
                 </button>
               </span>

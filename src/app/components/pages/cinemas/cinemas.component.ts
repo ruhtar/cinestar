@@ -11,7 +11,7 @@ export class CinemasComponent {
 
   cinemas!: ICinema[];
 
-  //Injeção de dependência
+  //Injecao de dependencia
   constructor(private cinemaDataService: CinemaService){}
 
   ngOnInit(){this.getAll();}
@@ -27,5 +27,14 @@ export class CinemasComponent {
     }
   }
 
+  delete(cinema : ICinema){
+    try{
+      this.cinemas = this.cinemas.filter((a) => cinema.id !== a.id);
+      this.cinemaDataService.delete(cinema.id!).subscribe();
+    } catch (error) {
+      console.log(error);
+      alert("erro interno do sistema");
+    }
+  }
   
 }

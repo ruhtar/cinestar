@@ -22,7 +22,7 @@ namespace api.Controllers
     {
       return _context.Cinemas.ToList();
     }
-    [Route("/new")]
+    [Route("register")]
     [HttpPost]
     public ActionResult AddCinemas([FromBody] Cinema cinema)
     {

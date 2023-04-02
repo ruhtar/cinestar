@@ -12,11 +12,11 @@ export class CinemaService {
   constructor(private http : HttpClient){}
 
   getAll(){
-     return this.http.get<ICinema[]>(API_PATH + "/cinemas");
+     return this.http.get<ICinema[]>(API_PATH);
   } 
 
   addCinema(cinema : ICinema){
-    return this.http.post<ICinema>(API_PATH + "/new", cinema);
+    return this.http.post<ICinema>(API_PATH + "/register", cinema);
   }
 
   getByName(cinema: ICinema){
@@ -25,5 +25,9 @@ export class CinemaService {
 
   update(cinema : ICinema){
     return this.http.put(API_PATH + + `/new/${cinema.id}`, cinema)
+  }
+
+  delete(id: number){
+    return this.http.delete<ICinema>(API_PATH + `/${id}`)
   }
 }
