@@ -10,7 +10,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 const routes: Routes = [
   {path:"", component: HomeComponent }, // -> movido para home.routing
   {path: "about", component: AboutComponent},
-  {path: "cinemas", component: CinemasComponent},
+  {path: "cinemas", loadChildren: () => import('../app/components/pages/cinemas/cinemas.module').then(m => m.CinemasModule)},
   {path: "register", component: NewCinemaComponent},
   {path: '**', component: PageNotFoundComponent}
 ];

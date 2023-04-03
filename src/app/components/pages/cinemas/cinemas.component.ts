@@ -29,7 +29,7 @@ export class CinemasComponent {
 
   delete(id : number){
     try{
-      this.cinemas = this.cinemas.filter((a) => id !== a.id);
+      this.cinemas = this.cinemas.filter((a) => id !== a.id); //Remove a linha da tabela
       this.cinemaDataService.delete(id).subscribe(); 
     } catch (error) {
       console.log(error);
