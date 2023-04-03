@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/pages/about/about.component';
-import { NewCinemaComponent } from './components/pages/cinemas/new-cinema/new-cinema.component';
+import { NewCinemaComponent } from './components/pages/new-cinema/new-cinema.component';
 import { CinemasComponent } from './components/pages/cinemas/cinemas.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';

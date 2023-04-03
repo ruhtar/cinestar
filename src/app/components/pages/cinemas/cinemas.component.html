@@ -20,7 +20,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let cinema of cinemas">
+          <tr *ngFor="let cinema of cinemas" class="cinema-rows">
+            <button>Detalhes</button>
             <td>{{ cinema.cinemaName }}</td>
             <td>
               <span class="float-right">
@@ -29,7 +30,7 @@
                 </button>
                 
                 <!-- databinding do tipo evento, da view para a lógica -->
-                <button class="btn btn-outline-danger mb-1 btn-sm" (click)="delete(cinema)" >
+                <button class="btn btn-outline-danger mb-1 btn-sm" (click)="delete(cinema.id!)" >
                   Remover
                 </button>
               </span>

@@ -19,8 +19,8 @@ export class CinemaService {
     return this.http.post<ICinema>(API_PATH + "/register", cinema);
   }
 
-  getByName(cinema: ICinema){
-    return this.http.get<ICinema>(API_PATH + "/client-page");
+  getById(id: number){
+    return this.http.get<ICinema>(API_PATH + "/:id");
   }
 
   update(cinema : ICinema){

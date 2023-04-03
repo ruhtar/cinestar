@@ -22,12 +22,25 @@ namespace api.Controllers
     {
       return _context.Cinemas.ToList();
     }
+
+    [HttpGet("{id}")]
+    public ActionResult<Cinema> GetCinemaById(int id)
+    {
+      var cinema = _context.Cinemas.Find(id);
+
+      if (cinema == null)
+      {
+        return NotFound();
+      }
+
+      return Ok(cinema);
+    }
+
+
     [Route("register")]
     [HttpPost]
     public ActionResult AddCinemas([FromBody] Cinema cinema)
     {
-      //var cinemaExists = this.GetCinemaByName(cinema.CinemaName);
-      //if (cinemaExists.Result() == 404) return BadRequest("Esse cinema já foi registrado.");
       _context.Cinemas.Add(cinema);
       _context.SaveChanges();
       return Ok(cinema);

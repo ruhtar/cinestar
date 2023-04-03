@@ -10,11 +10,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/pages/about/about.component';
-import { NewCinemaComponent } from './components/pages/cinemas/new-cinema/new-cinema.component';
+import { NewCinemaComponent } from './components/pages/new-cinema/new-cinema.component';
 import { FormComponent } from './components/form/form.component';
 import { CinemasComponent } from './components/pages/cinemas/cinemas.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CinemasModule } from './components/pages/cinemas/cinemas.module';
+import { CardComponent } from './components/pages/cinemas/card/card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CinemasModule } from './components/pages/cinemas/cinemas.module';
     AboutComponent,
     NewCinemaComponent,
     FormComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
