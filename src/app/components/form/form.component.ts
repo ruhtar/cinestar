@@ -10,7 +10,7 @@ import { cpfValidator } from 'src/app/validators/cpf-validator';
 })
 export class FormComponent {
   @Input() btnText!: string; //Entrada. O componente filho recebe os dados. 
-  @Output() onSubmit = new EventEmitter<ICinema>(); //Sa�da. Enviar dados para o componente pai
+  @Output() onSubmit = new EventEmitter<ICinema>(); //Saída. Enviar dados para o componente pai
 
   cinemaForm!: FormGroup
   formSucess: boolean = false;
@@ -46,15 +46,9 @@ export class FormComponent {
   }
   
   submit(){
-    if(this.cinemaForm.value.id){
-      //update
-  
-    }
-    else{
       if(this.cinemaForm.invalid) return;
       console.log(this.cinemaForm.value);
       this.onSubmit.emit(this.cinemaForm.value);
-      this.formSucess = true; 
-    }
+      this.formSucess = true;
   }
 }
