@@ -30,6 +30,7 @@ export class CinemasComponent {
 
   delete(id : number){
     try{
+      if(confirm("Você tem certeza que desejar remover esse registro?"))
       this.cinemas = this.cinemas.filter((a) => id !== a.id); //Remove a linha da tabela
       this.cinemaDataService.delete(id).subscribe(); 
     } catch (error) {

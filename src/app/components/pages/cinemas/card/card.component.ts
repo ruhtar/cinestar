@@ -13,6 +13,7 @@ export class CardComponent {
   cinema!: ICinema;
   id!: number;
   private routeSubscription!: Subscription;
+  
   constructor(private route: ActivatedRoute, private cinemaDataService: CinemaService) { }
 
   ngOnInit() {
