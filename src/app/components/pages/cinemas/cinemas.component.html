@@ -22,7 +22,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let cinema of cinemas" class="cinema-rows">
-            <button>Detalhes</button>
+            <button [routerLink]="['/cinemas', cinema.id]">Detalhes</button>
             <td>{{ cinema.cinemaName }}</td>
             <td>
               <span class="float-right">

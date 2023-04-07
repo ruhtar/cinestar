@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ICinema } from 'src/app/interfaces/ICinema';
 import { CinemaService } from 'src/app/services/cinema.service';
 
@@ -10,6 +10,7 @@ import { CinemaService } from 'src/app/services/cinema.service';
 export class CinemasComponent {
 
   cinemas!: ICinema[];
+  cinema!: ICinema;
 
   //Injecao de dependencia
   constructor(private cinemaDataService: CinemaService){}
@@ -37,12 +38,16 @@ export class CinemasComponent {
     }
   }
 
-  getById(id: number){
+/*   getById(id: number){
     try{
-      
-    }catch(error){
-
+    this.cinemaDataService.getById(id).subscribe((data:ICinema)=>{
+      this.cinema = data;
+      console.log(this.cinema);
+      return this.cinema;
+    })}catch(error){
+      console.log(error);
+      alert("erro interno do sistema");
     }
-  }
+  } */
   
 }

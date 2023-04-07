@@ -20,7 +20,7 @@ export class CinemaService {
   }
 
   getById(id: number){
-    return this.http.get<ICinema>(API_PATH + "/:id");
+    return this.http.get<ICinema>(`${API_PATH}/${id}`);
   }
 
   update(cinema : ICinema){

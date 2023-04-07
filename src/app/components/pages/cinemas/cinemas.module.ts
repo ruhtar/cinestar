@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 const cinemaRoutes: Routes = [
   {path: '',component: CinemasComponent, children: [
     {
-      path: 'oi',
+      path: ':id',
       loadChildren: () => import('./card/card.module').then(m => m.CardRoutesModule)
     }
   ]}
