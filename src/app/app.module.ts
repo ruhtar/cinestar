@@ -16,17 +16,19 @@ import { CinemasComponent } from './components/pages/cinemas/cinemas.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CinemasModule } from './components/pages/cinemas/cinemas.module';
 import { CardComponent } from './components/pages/cinemas/card/card.component';
+import { UpdateComponent } from './components/pages/cinemas/update/update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
     AboutComponent,
     NewCinemaComponent,
     FormComponent,
     PageNotFoundComponent,
-    CardComponent
+    CardComponent,
+    FooterComponent,
+    HeaderComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

@@ -1,23 +1,16 @@
 
-<h3>CINEMAS</h3>
+<h3>Confira aqui a lista de cinemas parceiros.</h3>
 <div class="container">
 
 
-<div class="card mt-3">
-    <div class="card-header">
-      <div class="float-left">
-      </div>
-      <div class="float-right">
-        <!-- <button type="button" class="btn btn-secondary">Atualizar</button> -->
-      </div>
-    </div>
-    <div class="card-body">
-      <table class="table table-hover">
+<div >
+    <div >
+      <table>
         <thead>
           <tr>
             <th>#</th>
             <th>Cinema</th>
-            <th><button routerLink="oi"> + Novo</button></th>
+            <th><button routerLink="/register"> + Novo</button></th>
           </tr>
         </thead>
         <tbody>
@@ -25,13 +18,13 @@
             <button [routerLink]="['/cinemas', cinema.id]">Detalhes</button>
             <td>{{ cinema.cinemaName }}</td>
             <td>
-              <span class="float-right">
-                <button class="btn btn-outline-warning mb-1 btn-sm" >
+              <span >
+                <button [routerLink]="['/cinemas/update', cinema.id]">
                   Atualizar
                 </button>
                 
                 <!-- databinding do tipo evento, da view para a lógica -->
-                <button class="btn btn-outline-danger mb-1 btn-sm" (click)="delete(cinema.id!)" >
+                <button (click)="delete(cinema.id!)" >
                   Remover
                 </button>
               </span>
