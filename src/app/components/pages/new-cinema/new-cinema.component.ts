@@ -10,20 +10,13 @@ import { ObservableService } from 'src/app/services/observable.service';
 })
 export class NewCinemaComponent {
     btnText = "Salvar"
-    lastCinema!: ICinema;
+
     //Injeção de dependência
-    constructor(private cinemaService: CinemaService, private observableService: ObservableService){
-      this.observableService.getCinemaObservable().subscribe(newCinema => {
-        this.lastCinema = newCinema;
-      })
+    constructor(private cinemaService: CinemaService){
     }
 
   async createHandler(cinema : ICinema){
     await this.cinemaService.addCinema(cinema).subscribe();
-    this.setNewCinemaInfo(cinema);
   }
 
-  setNewCinemaInfo(cinema: ICinema){
-    this.observableService.setCinemaObservable(cinema)
-  }
 }

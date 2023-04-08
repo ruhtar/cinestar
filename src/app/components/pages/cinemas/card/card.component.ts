@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ICinema } from 'src/app/interfaces/ICinema';
 import { CinemaService } from 'src/app/services/cinema.service';
+import { ObservableService } from 'src/app/services/observable.service';
 
 @Component({
   selector: 'app-card',
@@ -14,7 +15,7 @@ export class CardComponent {
   id!: number;
   private routeSubscription!: Subscription;
   
-  constructor(private route: ActivatedRoute, private cinemaDataService: CinemaService) { }
+  constructor(private route: ActivatedRoute, private cinemaDataService: CinemaService,  private observableService: ObservableService) { }
 
   ngOnInit() {
     this.routeSubscription = this.route.paramMap.subscribe(params => {
@@ -26,12 +27,14 @@ export class CardComponent {
     try{
       this.cinemaDataService.getById(id).subscribe((data:ICinema)=>{
         this.cinema = data;
-        console.log(this.cinema);
         return this.cinema;
     })}catch(error){
-      console.log(error);
       alert("erro interno do sistema");
     }
+  }
+
+  addStars(cinemaName : string){
+    this.observableService.setCinemaObservable(cinemaName)
   }
 
   ngOnDestroy() {

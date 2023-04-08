@@ -45,7 +45,9 @@ namespace api.Controllers
       _context.SaveChanges();
       return Ok(cinema);
     }
-    [HttpGet("{nomeCinema}/{nomeCliente}")]
+    [HttpGet]
+    [Route("/filter")]
+
     public ActionResult<Cinema> GetCinemaByName(string CinemaName)
     {
       var entidade = _context.Cinemas

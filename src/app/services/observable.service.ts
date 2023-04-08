@@ -7,15 +7,15 @@ import { ICinema } from '../interfaces/ICinema';
 })
 export class ObservableService {
 
-  cinemaObservable : Subject<ICinema> = new Subject();
+  public cinemaObservable : Subject<string> = new Subject<string>();
   
   constructor() { }
-  setCinemaObservable(newValue : ICinema){
+  setCinemaObservable(newValue : string){
     //Notifica a todos que observam o observable que o valor dele foi modificado
     this.cinemaObservable.next(newValue);
   }
 
-  getCinemaObservable() : Observable<ICinema> {
+  getCinemaObservable() : Observable<string> {
     return this.cinemaObservable.asObservable();
   }
 }

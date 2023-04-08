@@ -47,7 +47,6 @@ export class FormComponent {
   
   submit(){
       if(this.cinemaForm.invalid) return;
-      console.log(this.cinemaForm.value);
       this.onSubmit.emit(this.cinemaForm.value);
       this.formSucess = true;
   }
