@@ -1,4 +1,4 @@
-import { AbstractControl, FormControl, ValidationErrors } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 
 export function cpfValidator(control: FormControl) {
   const cpf = control.value;
