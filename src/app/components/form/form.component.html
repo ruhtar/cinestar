@@ -1,7 +1,7 @@
 <!-- Diretiva ngSubmit -->
 <!-- Diretiva: formGroup indica ao angular um grupo de formulario para ele monitorar -->
 <!-- #formDir="ngForm" é uma sintaxepara criar referências locais para formulários e acessá-los. -->
-<form (ngSubmit)="submit()" [formGroup]="cinemaForm" #formDir="ngForm" >
+<form (ngSubmit)="submit()" [formGroup]="cinemaForm" #formDir="ngForm" class="form-wrapper">
 
     <div class="form-answers">
         <label for="owner-name">Nome do proprietário: </label>

@@ -1,3 +1,10 @@
+.form-wrapper {
+    border: 2px solid #f1a484;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
 label{
     font-size: 20px;
 }
@@ -25,17 +32,16 @@ input::placeholder {
     height: 40px;
     width: 80px;
     font-size: 14pt;
-    background-color: yellow;
+    background-color: #f8d2b0;
     color: black;
-    font-weight: 600;
+    font-weight: 400;
     transition: 0.3s;
     border-radius: 10px;
 }
 
 .submit-button:hover {
     cursor: pointer;
-    background-color: black;
-    color: yellow;
+    background-color:#f1a484;
 }
 
 .form-sucess p{

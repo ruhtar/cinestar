@@ -2,10 +2,91 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 64px;
  }
 
  .details{
     display: flex;
     justify-content: center;
     align-items: center;
+ }
+ 
+ .cinema-rows{
+   text-align: center;
+ }
+
+
+ thead {
+   background-color: #f2f2f2;
+   font-weight: bold;
+ }
+
+ table tr th{
+   width: 100px;
+ }
+ 
+ .cinema-rows td{
+   width: 200px
+ }
+
+ .update-btn {
+   background-color: #fa961c;
+   border: none;
+   color: white;
+   padding: 8px 16px;
+   text-align: center;
+   font-size: 14px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: 0.3s;
+ }
+
+ .update-btn:hover {
+   background-color: #a96513;
+ }
+ 
+ .update-btn:active {
+   background-color: #5f390b;
+ }
+
+ .delete-btn {
+   background-color: rgb(242, 6, 6);
+   border: none;
+   color: white;
+   padding: 8px 16px;
+   text-align: center;
+   font-size: 14px;
+   border-radius: 4px;
+   transition: 0.3s;
+   cursor: pointer;
+ }
+
+ .delete-btn:hover {
+   background-color: rgb(153, 58, 58);
+
+ }
+ 
+ .delete-btn:active {
+   background-color: rgb(73, 3, 3);
+ }
+
+
+ .details-btn {
+   background-color: #f8d2b0;
+   border: none;
+   color: rgb(0, 0, 0);
+   padding: 8px 16px;
+   text-align: center;
+   font-size: 14px;
+   border-radius: 4px;
+   transition: 0.3s;
+   cursor: pointer;
+ }
+
+ .details-btn:hover {
+   background-color: #d5b599;
+ }
+ 
+ .details-btn:active {
+   background-color: #9e8671;
  }

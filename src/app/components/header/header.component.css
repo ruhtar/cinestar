@@ -1,7 +1,7 @@
 header {
-    font-size: 40px;
+    font-size: 30px;
     /* background-image: linear-gradient(to bottom, #fa6464, #fcd6d6); */
-    background-color: black;
+    background-color: #f8d2b0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,15 +10,17 @@ header {
 }
 
 header h2{
-    color: yellow;
+    margin-left: 20px;
 }
 
+.link-logo{
+    text-decoration: none;
+}
 
 .links {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .links li {
@@ -27,13 +29,13 @@ header h2{
     margin-right:  40px;
     list-style: none;
 } 
-a {
+
+.links a {
     padding: 20px;
     text-decoration: none;
-    color: rgb(255, 247, 0);
     transition: 0.4s;
 }
-a:hover{
+.links a:hover{
     font-size: 22px;
-    color: white;
+    color: rgb(104, 100, 100);
   }

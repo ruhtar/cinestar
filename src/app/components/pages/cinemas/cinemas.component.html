@@ -1,54 +1,37 @@
-
-<h3>Confira aqui a lista de cinemas parceiros. </h3>
-<p>{{cinemaStar}}</p>
+<div>
+  <h3>Confira aqui a lista de cinemas parceiros. </h3>
+  <p>{{cinemaStar}}</p>
+</div>
 <div class="container">
-
-
-<div >
-    <div >
-      <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Cinema</th>
-            <th><button routerLink="/register"> + Novo</button></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let cinema of cinemas" class="cinema-rows">
-            <button [routerLink]="['/cinemas', cinema.id]">Detalhes</button>
-            <td>{{ cinema.cinemaName }}</td>
+  <table>
+    <thead>
+      <tr>
+        <th>Veja mais</th>
+        <th>Lista de Cinemas</th>
+        <th>Edite um cinema</th>
+        <th>Delete um cinema</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cinema of cinemas" class="cinema-rows">
+        <td>
+          <button [routerLink]="['/cinemas', cinema.id]" class="details-btn">Detalhes</button>
+        </td>
+        <td>{{ cinema.cinemaName }}</td>
             <td>
-              <span >
-                <button [routerLink]="['/cinemas/update', cinema.id]">
-                  Atualizar
-                </button>
-                
-                <!-- databinding do tipo evento, da view para a lógica -->
-                <button (click)="delete(cinema.id!)" >
-                  Remover
-                </button>
-              </span>
+              <button [routerLink]="['/cinemas/update', cinema.id]" class="update-btn">
+                Atualizar
+              </button>
             </td>
-          </tr>
-        </tbody>
-      </table>
-  
-      <ng-template #loading>
-        <span>Carregando Cursos...</span>
-      </ng-template>
-
-    </div>
-  </div>
-  
-  <ng-template #deleteModal>
-    <div class="modal-body text-center">
-      <p>Tem certeza que deseja remover esse curso?</p>
-      <button type="button" class="btn btn-default" >Sim</button>
-      <button type="button" class="btn btn-primary" >Nao</button>
-    </div>
-  </ng-template>
-
+            <!-- databinding do tipo evento, da view para a lógica -->
+            <td>
+              <button (click)="delete(cinema.id!)" class="delete-btn">
+                Remover
+              </button>
+            </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <div class="details">
   <router-outlet></router-outlet>
