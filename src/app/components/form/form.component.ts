@@ -11,7 +11,8 @@ import { cpfValidator } from 'src/app/validators/cpf-validator';
 export class FormComponent {
   @Input() btnText!: string; //Entrada. O componente filho recebe os dados. 
   @Output() onSubmit = new EventEmitter<ICinema>(); //Saída. Enviar dados para o componente pai
-
+  @Input() cinemaUpdate?: ICinema;
+  
   cinemaForm!: FormGroup
   formSucess: boolean = false;
 
@@ -26,6 +27,8 @@ export class FormComponent {
   }
 
   ngOnInit():void{
+    this.formSucess = false;
+    console.log("carregou");
     
   }
 

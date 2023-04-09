@@ -10,6 +10,13 @@ import { ObservableService } from 'src/app/services/observable.service';
 })
 export class NewCinemaComponent {
     btnText = "Salvar"
+    cinemaUpdate: ICinema={
+      ownerName: "",
+      cpf: "",
+      cinemaName: "",
+      street: "",
+      description: ""
+    };
 
     //Injeção de dependência
     constructor(private cinemaService: CinemaService){

@@ -13,16 +13,29 @@ export class UpdateComponent {
   btnText = "Editar";
   private routeSubscription!: Subscription;
   id!: number;
+  cinemaUpdate!: ICinema
+  ownerNameUpdate:string = "teste"
 
   constructor(private cinemaService : CinemaService, private route: ActivatedRoute){}
 
   ngOnInit() {
     this.routeSubscription = this.route.paramMap.subscribe(params => {
       this.id = Number(params.get('id'));
+      this.getById(this.id)
     });
+  }
+
+  getById(id: number){
+    this.cinemaService.getById(id).subscribe((data:ICinema)=>{
+      this.cinemaUpdate = data;
+  })
   }
   
   async editHandler(cinema: ICinema){
     await this.cinemaService.update(cinema, this.id).subscribe();
+  }
+
+  ngOnDestroy() {
+    this.routeSubscription.unsubscribe();
   }
 }

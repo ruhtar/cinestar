@@ -2,7 +2,7 @@
 export interface ICinema {
     id?: number, 
     ownerName: string,
-    cpf: number,
+    cpf: string,
     cinemaName: string,
     street: string,
     description?: string,

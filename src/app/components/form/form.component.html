@@ -6,7 +6,7 @@
     <div class="form-answers">
         <label for="owner-name">Nome do proprietário: </label>
         <input id="owner-name" type="text" placeholder="Informe o nome do proprietário" 
-        formControlName="ownerName" required>
+        formControlName="ownerName" [(ngModel)]="cinemaUpdate!.ownerName" required>
     </div>
     <!-- Div de validação: Renderização condicional -->
     <div *ngIf="ownerName.invalid && formDir.submitted" class="validation-error">
@@ -15,7 +15,7 @@
 
     <div class="form-answers">
         <label for="cpf">CPF: </label>
-        <input id="cpf" type="text" placeholder="Informe o CPF" 
+        <input id="cpf" type="text" placeholder="Informe o CPF" [(ngModel)]="cinemaUpdate!.cpf"
         formControlName="cpf" required>
     </div>
     <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error"><p *ngIf="cpf.errors?.['required']">CPF obrigatório</p></div>
@@ -24,6 +24,7 @@
     <div class="form-answers">
         <label for="cinema-name">Nome do cinema: </label>
         <input id="cinema-name" type="text" placeholder="Informe o nome do cinema" 
+        [(ngModel)]="cinemaUpdate!.cinemaName"
         formControlName="cinemaName" required>
     </div>
     <div *ngIf="cinemaName.invalid && formDir.submitted" class="validation-error"><p *ngIf="cinemaName.errors?.['required']">Nome obrigatório</p></div>
@@ -31,13 +32,14 @@
     <div class="form-answers">
         <label for="street">Rua: </label>
         <input id="street" type="text" placeholder="Informe o local" 
+        [(ngModel)]="cinemaUpdate!.street"
         formControlName="street" required>
     </div>
     <div *ngIf="street.invalid && formDir.submitted" class="validation-error"><p *ngIf="street.errors?.['required']">Endereço obrigatório</p></div>
 
     <div class="form-answers">
         <label for="">Descrição: </label>
-        <textarea type="textarea" formControlName="description"></textarea>
+        <textarea type="textarea" formControlName="description" [(ngModel)]="cinemaUpdate!.description"></textarea>
     </div>
     <input type="submit" value="{{btnText}}" class="submit-button" >
     <div *ngIf="formSucess" class="form-sucess"><p> Formulário enviado com sucesso!</p></div>
