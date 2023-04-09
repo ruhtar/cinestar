@@ -27,7 +27,6 @@ export class CardComponent {
     try{
       this.cinemaDataService.getById(id).subscribe((data:ICinema)=>{
         this.cinema = data;
-        return this.cinema;
     })}catch(error){
       alert("erro interno do sistema");
     }

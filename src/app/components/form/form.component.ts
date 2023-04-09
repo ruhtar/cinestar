@@ -28,8 +28,6 @@ export class FormComponent {
 
   ngOnInit():void{
     this.formSucess = false;
-    console.log("carregou");
-    
   }
 
   get ownerName(){

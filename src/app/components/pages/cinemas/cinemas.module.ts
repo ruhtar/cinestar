@@ -3,9 +3,6 @@ import { CinemasComponent } from './cinemas.component';
 import { CinemaService } from 'src/app/services/cinema.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { UpdateComponent } from './update/update.component';
-import { FooterComponent } from '../../footer/footer.component';
-import { HeaderComponent } from '../../header/header.component';
 
 const cinemaRoutes: Routes = [
   {path: '',component: CinemasComponent, children: [

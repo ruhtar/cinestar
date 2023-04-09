@@ -51,17 +51,9 @@ li {
   margin-bottom: 10px;
 }
 
-/* Estilos para as citações */
-blockquote {
-  margin-left: 20px;
-  margin-right: 20px;
-  font-style: italic;
-  color: #666;
-}
-
 /* Estilos para os links */
 a {
-  color: #0077c0;
+  color: #f1a484;
   text-decoration: none;
 }
 

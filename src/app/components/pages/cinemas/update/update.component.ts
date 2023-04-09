@@ -14,7 +14,6 @@ export class UpdateComponent {
   private routeSubscription!: Subscription;
   id!: number;
   cinemaUpdate!: ICinema
-  ownerNameUpdate:string = "teste"
 
   constructor(private cinemaService : CinemaService, private route: ActivatedRoute){}
 
