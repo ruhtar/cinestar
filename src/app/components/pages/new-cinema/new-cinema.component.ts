@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { ICinema } from 'src/app/interfaces/ICinema';
 import { CinemaService } from 'src/app/services/cinema.service';
-import { ObservableService } from 'src/app/services/observable.service';
 
 @Component({
   selector: 'app-new-cinema',
@@ -9,7 +8,7 @@ import { ObservableService } from 'src/app/services/observable.service';
   styleUrls: ['./new-cinema.component.css']
 })
 export class NewCinemaComponent {
-    btnText = "Salvar"
+    btnText: string = "Salvar";
     cinemaUpdate: ICinema={
       ownerName: "",
       cpf: "",

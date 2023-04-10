@@ -11,39 +11,28 @@ import { ObservableService } from 'src/app/services/observable.service';
 export class CinemasComponent {
 
   cinemas!: ICinema[];
-  cinema!: ICinema;
   cinemaStar! : string
 
   //Injecao de dependencia
-  constructor(private cinemaDataService: CinemaService, private cinemaObservable: ObservableService,){}
+  constructor(private cinemaDataService: CinemaService, 
+    private cinemaObservable: ObservableService,){}
 
   ngOnInit(){
-    this.getAll();
-    this.cinemaObservable.getCinemaObservable().subscribe((cinemaStar:string) => {      
-      this.cinemaStar = cinemaStar;
+    this.cinemaDataService.getAll().subscribe((cinemas:ICinema[]) => 
+      this.cinemas = cinemas,
+    );
+
+    this.cinemaObservable.getCinemaObservable().subscribe((data:string) => {      
+      this.cinemaStar = data;
     });
   
   }
 
-  getAll() {
-    try {
-      this.cinemaDataService.getAll().subscribe(
-        cinemas => this.cinemas = cinemas,
-      );
-    } catch (error) {
-      alert("erro interno do sistema");
-    }
-  }
-
   delete(id : number){
-    try{
-      if(confirm("Você tem certeza que desejar remover esse registro?"))
-      this.cinemas = this.cinemas.filter((a) => id !== a.id); //Remove a linha da tabela
-      this.cinemaDataService.delete(id).subscribe(); 
-    } catch (error) {
-      alert("erro interno do sistema");
-    }
+      if(confirm("Você tem certeza que desejar remover esse registro?")){
+        this.cinemas = this.cinemas.filter(a => id !== a.id); //Remove a linha da tabela
+        this.cinemaDataService.delete(id);
+        alert("Cinema removido.") 
+      }
   }
-
-  
 }

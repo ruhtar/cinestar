@@ -39,12 +39,13 @@ namespace api.Controllers
 
     [Route("register")]
     [HttpPost]
-    public ActionResult AddCinemas([FromBody] Cinema cinema)
+    public IActionResult AddCinema([FromBody] Cinema cinema)
     {
-      _context.Cinemas.Add(cinema);
-      _context.SaveChanges();
-      return Ok(cinema);
+        _context.Cinemas.Add(cinema);
+        _context.SaveChanges();
+        return CreatedAtAction(nameof(GetCinemaById), new { id = cinema.Id }, cinema);
     }
+
     [HttpGet]
     [Route("/filter")]
 
