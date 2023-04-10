@@ -24,12 +24,9 @@ export class CardComponent {
     });
   }
   getById(id: number){
-    try{
       this.cinemaDataService.getById(id).subscribe((data:ICinema)=>{
         this.cinema = data;
-    })}catch(error){
-      alert("erro interno do sistema");
-    }
+    })
   }
 
   addStars(cinemaName : string){

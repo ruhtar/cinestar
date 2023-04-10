@@ -19,7 +19,7 @@
         <span>Rua:</span>
         <span>{{cinema.street}}</span>
       </div>
-      <div class="cinema-row">
+      <div *ngIf="cinema.description" class="cinema-row">
         <span>Descrição:</span>
         <p>{{cinema.description}}</p>
       </div>

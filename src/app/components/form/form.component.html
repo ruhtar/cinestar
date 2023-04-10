@@ -19,7 +19,7 @@
         formControlName="cpf" required>
     </div>
     <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error"><p *ngIf="cpf.errors?.['required']">CPF obrigatório</p></div>
-    <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error"><p *ngIf="cpf.errors?.['cpfInvalido']" > CPF inválido</p></div>
+    <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error"><p *ngIf="cpf.errors?.['cpfInvalido']">CPF inválido</p></div>
 
     <div class="form-answers">
         <label for="cinema-name">Nome do cinema: </label>
