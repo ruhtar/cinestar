@@ -7,7 +7,6 @@ import { Observable, Subject } from 'rxjs';
 export class ObservableService {
 
   public cinemaObservable : Subject<string> = new Subject<string>();
-  
 
   setCinemaObservable(newValue : string){
     //Notifica a todos que observam o observable que o valor dele foi modificado
