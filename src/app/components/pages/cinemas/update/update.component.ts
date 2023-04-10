@@ -10,7 +10,7 @@ import { CinemaService } from 'src/app/services/cinema.service';
   styleUrls: ['./update.component.css']
 })
 export class UpdateComponent {
-  btnText = "Editar";
+  btnText: string = "Editar";
   private routeSubscription!: Subscription;
   id!: number;
   cinemaUpdate!: ICinema

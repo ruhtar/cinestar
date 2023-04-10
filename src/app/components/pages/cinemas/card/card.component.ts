@@ -15,7 +15,8 @@ export class CardComponent {
   id!: number;
   private routeSubscription!: Subscription;
   
-  constructor(private route: ActivatedRoute, private cinemaDataService: CinemaService,  private observableService: ObservableService) { }
+  constructor(private route: ActivatedRoute, private cinemaDataService: CinemaService, 
+    private observableService: ObservableService) { }
 
   ngOnInit() {
     this.routeSubscription = this.route.paramMap.subscribe(params => {

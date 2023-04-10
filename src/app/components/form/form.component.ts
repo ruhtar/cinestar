@@ -26,9 +26,6 @@ export class FormComponent {
     });
   }
 
-  ngOnInit():void{
-    this.formSucess = false;
-  }
 
   get ownerName(){
     return this.cinemaForm.get("ownerName")!;

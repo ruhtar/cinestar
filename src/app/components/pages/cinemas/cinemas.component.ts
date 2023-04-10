@@ -11,7 +11,7 @@ import { ObservableService } from 'src/app/services/observable.service';
 export class CinemasComponent {
 
   cinemas!: ICinema[];
-  cinemaStar! : string
+  cinemaStar! : string;
 
   //Injecao de dependencia
   constructor(private cinemaDataService: CinemaService, 
