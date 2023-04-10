@@ -17,6 +17,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { CinemasModule } from './components/pages/cinemas/cinemas.module';
 import { CardComponent } from './components/pages/cinemas/card/card.component';
 import { UpdateComponent } from './components/pages/cinemas/update/update.component';
+import {  NgImageSliderModule } from 'ng-image-slider';
+import { HomeModule } from './components/pages/home/home.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,7 @@ import { UpdateComponent } from './components/pages/cinemas/update/update.compon
     CardComponent,
     FooterComponent,
     HeaderComponent,
-    UpdateComponent
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { UpdateComponent } from './components/pages/cinemas/update/update.compon
     HttpClientModule, 
     ReactiveFormsModule, 
     FormsModule,
-    CinemasModule
+    HomeModule,
+    CinemasModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

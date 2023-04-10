@@ -11,5 +11,10 @@ import { ObservableService } from 'src/app/services/observable.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent{
-
+  images = [
+    { image: 'https://via.placeholder.com/600x400', thumbImage: 'https://via.placeholder.com/150x100' },
+    { image: 'https://via.placeholder.com/600x400', thumbImage: 'https://via.placeholder.com/150x100' },
+    { image: 'https://via.placeholder.com/600x400', thumbImage: 'https://via.placeholder.com/150x100' },
+    { image: 'https://via.placeholder.com/600x400', thumbImage: 'https://via.placeholder.com/150x100' }
+  ];
 }
