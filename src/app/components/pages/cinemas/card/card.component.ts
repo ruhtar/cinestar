@@ -12,12 +12,11 @@ import { CinemaService } from 'src/app/services/cinema.service';
 export class CardComponent {
   cinema!: ICinema;
   id!: number;
-  private routeSubscription!: Subscription;
   
   constructor(private route: ActivatedRoute, private cinemaDataService: CinemaService) { }
 
   ngOnInit() {
-    this.routeSubscription = this.route.paramMap.subscribe(params => {
+    this.route.paramMap.subscribe(params => {
       this.id = Number(params.get('id'));
       this.getById(this.id);
     });
@@ -28,7 +27,4 @@ export class CardComponent {
     })
   }
 
-  ngOnDestroy() {
-    this.routeSubscription.unsubscribe();
-  }
 }

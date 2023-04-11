@@ -9,22 +9,22 @@ import { CinemaService } from 'src/app/services/cinema.service';
 })
 export class CinemasComponent {
 
-  cinemas!: ICinema[];
+  cinemas!: ICinema[];  
 
   //Injecao de dependencia
   constructor(private cinemaDataService: CinemaService){}
 
   ngOnInit(){
     this.cinemaDataService.getAll().subscribe((cinemas:ICinema[]) => 
-      this.cinemas = cinemas,
+      this.cinemas = cinemas
     );
   }
 
   delete(id : number){
       if(confirm("Você tem certeza que desejar remover esse registro?")){
-        this.cinemas = this.cinemas.filter(a => id !== a.id); //Remove a linha da tabela
         this.cinemaDataService.delete(id).subscribe();
-        alert("Cinema removido.") 
+        this.cinemas = this.cinemas.filter(a => id !== a.id); //Remove a linha da tabela
+        alert("Cinema removido.")
       }
   }
 }

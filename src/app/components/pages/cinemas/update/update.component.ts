@@ -11,7 +11,6 @@ import { CinemaService } from 'src/app/services/cinema.service';
 })
 export class UpdateComponent {
   btnText: string = "Editar";
-  private routeSubscription!: Subscription;
   id!: number;
   cinemaUpdate!: ICinema
 
@@ -19,7 +18,7 @@ export class UpdateComponent {
     private router: Router){}
 
   ngOnInit() {
-    this.routeSubscription = this.route.paramMap.subscribe(params => {
+    this.route.paramMap.subscribe(params => {
       this.id = Number(params.get('id'));
       this.getById(this.id)
     });
@@ -38,7 +37,4 @@ export class UpdateComponent {
     }, 2500);
   }
 
-  ngOnDestroy() {
-    this.routeSubscription.unsubscribe();
-  }
 }

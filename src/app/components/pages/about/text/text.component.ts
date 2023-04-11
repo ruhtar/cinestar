@@ -12,9 +12,9 @@ export class TextComponent {
 
   constructor(private check: CheckService){}
 
-ngOnInit(){
-  this.check.getCheck().subscribe((data:string) => {    
-    this.lastItem = data;
-  });
-}
+  ngOnInit(){
+    this.check.getCheck().subscribe((data:string) => {    
+      this.lastItem = data;
+    });
+  }
 }
