@@ -25,13 +25,13 @@
         <td>
           <button [routerLink]="['/cinemas', cinema.id]" class="details-btn">Detalhes</button>
         </td>
-        <td>{{ cinema.cinemaName }}</td>
+        <td>  {{ cinema.cinemaName }}</td>
             <td>
               <button [routerLink]="['/cinemas/update', cinema.id]" class="update-btn">
                 Atualizar
               </button>
             </td>
-            <!-- databinding do tipo evento, da view para a l�gica -->
+            <!-- databinding do tipo evento, da view para a lógica -->
             <td>
               <button (click)="delete(cinema.id!)" class="delete-btn">
                 Remover
@@ -42,7 +42,5 @@
   </table>
 </div>
 <div class="details">
-  <router-outlet></router-outlet>
 </div>
-
 </div>

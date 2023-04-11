@@ -1,0 +1,15 @@
+<h1>Cinestart - Projeto Angular</h1>
+<div class="p-wrapper">
+<p>O Cinestart é um projeto pessoal desenvolvido para desenvolver certas competências do framework Angular. O projeto se faz uso do Reactive Form para elaboração de formulários, o HttpClient para realizar requisições HTTP, o Angular Router para fazer o roteamento dos componentes, além de estabelecer a comunicação entre componentes pais e filhos por meio de @Input e @Output, bem como através de Observable e Subject.</p> <br>
+
+<p>O projeto adota práticas de desacoplamento da lógica dos componentes para uma camada de serviços, o que torna o código mais organizado e fácil de manter. Adicionalmente, o Cinestart também utiliza o conceito de lazy loading dos módulos das rotas filhas do componente Cinema, o que otimiza a performance da aplicação. Além disso, o Cinestart possui um algoritmo de validação customizada para o CPF do usuário, o que aumenta a segurança e confiabilidade dos dados manipulados na aplicação.</p><br>
+
+<p>O projeto possui integração com uma API no backend desenvolvida em .NET com banco de dados MySQL, que permite realizar operações de criação, leitura, atualização e deleção de dados.</p> <br>
+<p>Você pode conferir o repositório do projeto <a href="https://github.com/ruhtar/projeto-angular">aqui</a></p>
+<div *ngIf="lastItem" class="competence-container">
+    <p>Última competência treinada no projeto</p>
+    <span  class="competence">
+        <p>{{lastItem}}</p>
+    </span>
+</div>
+</div>

@@ -22,7 +22,8 @@ export class CinemasComponent {
       this.cinemas = cinemas,
     );
 
-    this.cinemaObservable.getCinemaObservable().subscribe((data:string) => {      
+    this.cinemaObservable.getCinemaObservable().subscribe((data:string) => {    
+      console.log(data)  
       this.cinemaStar = data;
     });
   

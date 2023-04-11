@@ -43,6 +43,11 @@ export class FormComponent {
     return this.cinemaForm.get("street")!;
   }
   
+  get description(){
+    return this.cinemaForm.get("description")!;
+  }
+  
+  
   submit(){
       if(this.cinemaForm.invalid) return;
       this.onSubmit.emit(this.cinemaForm.value);

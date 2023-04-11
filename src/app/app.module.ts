@@ -16,6 +16,8 @@ import { HomeModule } from './components/pages/home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog'; 
 import { NewCinemaComponent } from './components/pages/new-cinema/new-cinema.component';
+import { TextComponent } from './components/pages/about/text/text.component';
+import { ListComponent } from './components/pages/about/list/list.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { NewCinemaComponent } from './components/pages/new-cinema/new-cinema.com
     FooterComponent,
     HeaderComponent,
     UpdateComponent,
+    TextComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,
