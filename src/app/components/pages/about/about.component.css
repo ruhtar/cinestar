@@ -8,6 +8,6 @@
   } 
 
   .container {
-    animation: fade-in 1.5s ease-out;
+    animation: fade-in 1.5s;
     padding: 20px;
   }
