@@ -17,6 +17,7 @@ export class ListComponent {
   "@Input e @Output",
   "Observable e Subject",
   "NG Image Slider",
+  "Sweet Alert",
   ".NET",
   "MySQL"]
 

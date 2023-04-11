@@ -3,6 +3,7 @@ import { CinemasComponent } from './cinemas.component';
 import { CinemaService } from 'src/app/services/cinema.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 const cinemaRoutes: Routes = [
   {path: '', children: [
@@ -27,6 +28,7 @@ const cinemaRoutes: Routes = [
   ],
   imports: [
     CommonModule,
+    [SweetAlert2Module],
     RouterModule.forChild(cinemaRoutes)
   ],
   providers: [CinemaService],

@@ -30,8 +30,14 @@
             </td>
             <!-- databinding do tipo evento, da view para a lógica -->
             <td>
-              <button (click)="delete(cinema.id!)" class="delete-btn">
-                Remover
+              <button class="delete-btn" [swal]="{
+                title: 'ATENÇÃO',
+                text: 'Deseja realmente excluir esse registro do sistema?',
+                showDenyButton: true,
+                denyButtonText: 'Não',
+                confirmButtonText: 'Sim', icon: 'warning'
+              }" (confirm)="delete(cinema.id!)">
+                Remover 
               </button>
             </td>
       </tr>

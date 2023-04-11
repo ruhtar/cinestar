@@ -21,10 +21,7 @@ export class CinemasComponent {
   }
 
   delete(id : number){
-      if(confirm("Você tem certeza que desejar remover esse registro?")){
-        this.cinemaDataService.delete(id).subscribe();
-        this.cinemas = this.cinemas.filter(a => id !== a.id); //Remove a linha da tabela
-        alert("Cinema removido.")
-      }
+      this.cinemaDataService.delete(id).subscribe();
+      this.cinemas = this.cinemas.filter(a => id !== a.id); //Remove a linha da tabela
   }
 }

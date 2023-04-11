@@ -18,6 +18,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { NewCinemaComponent } from './components/pages/new-cinema/new-cinema.component';
 import { TextComponent } from './components/pages/about/text/text.component';
 import { ListComponent } from './components/pages/about/list/list.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ListComponent } from './components/pages/about/list/list.component';
     HomeModule,
     CinemasModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SweetAlert2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
