@@ -1,3 +1,30 @@
-img {
-    margin: auto;   
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } 
+
+.container{
+    animation: fade-in 1s;
+}
+
+
+h1{
+    font-weight: 200;
+}
+
+.img-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-text p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 65%;
+    font-weight: 300;
 }

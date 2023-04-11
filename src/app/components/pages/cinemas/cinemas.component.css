@@ -7,6 +7,10 @@
   }
 } 
 
+.wrapper{
+  animation: fade-in 1.2s;
+}
+
 .container {
     display: flex;
     justify-content: center;
