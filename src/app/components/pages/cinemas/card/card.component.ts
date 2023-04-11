@@ -21,10 +21,10 @@ export class CardComponent {
       this.getById(this.id);
     });
   }
+
   getById(id: number){
       this.cinemaDataService.getById(id).subscribe((data:ICinema)=>{
         this.cinema = data;
     })
   }
-
 }
