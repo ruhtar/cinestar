@@ -50,3 +50,8 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
+.competence-container h4{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
