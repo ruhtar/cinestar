@@ -1,9 +1,24 @@
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } 
+
+
+
 .form-wrapper {
+    animation: fade-in 1s;
     border: 2px solid #f1a484;
     padding: 20px;
     border-radius: 10px;
 }
 
+p{
+    animation: fade-in 1s;
+}
 
 label{
     font-size: 20px;
