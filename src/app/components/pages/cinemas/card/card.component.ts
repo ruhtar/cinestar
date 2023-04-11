@@ -1,9 +1,7 @@
-import { Component, Input } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { Component} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ICinema } from 'src/app/interfaces/ICinema';
-import { ObservableService } from 'src/app/services/observable.service';
 import { CinemaService } from 'src/app/services/cinema.service';
 
 @Component({
@@ -30,9 +28,7 @@ export class CardComponent {
     })
   }
 
-
   ngOnDestroy() {
     this.routeSubscription.unsubscribe();
   }
-
 }

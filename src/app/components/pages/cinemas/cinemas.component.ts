@@ -1,7 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { ICinema } from 'src/app/interfaces/ICinema';
 import { CinemaService } from 'src/app/services/cinema.service';
-import { ObservableService } from 'src/app/services/observable.service';
 
 @Component({
   selector: 'app-cinemas',
@@ -11,22 +10,14 @@ import { ObservableService } from 'src/app/services/observable.service';
 export class CinemasComponent {
 
   cinemas!: ICinema[];
-  cinemaStar! : string;
 
   //Injecao de dependencia
-  constructor(private cinemaDataService: CinemaService, 
-    private cinemaObservable: ObservableService,){}
+  constructor(private cinemaDataService: CinemaService){}
 
   ngOnInit(){
     this.cinemaDataService.getAll().subscribe((cinemas:ICinema[]) => 
       this.cinemas = cinemas,
     );
-
-    this.cinemaObservable.getCinemaObservable().subscribe((data:string) => {    
-      console.log(data)  
-      this.cinemaStar = data;
-    });
-  
   }
 
   delete(id : number){

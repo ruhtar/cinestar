@@ -1,9 +1,4 @@
-import { Component, ChangeDetectorRef, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
-import { ICinema } from 'src/app/interfaces/ICinema';
-import { ObservableService } from 'src/app/services/observable.service';
-
-
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-home',
