@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ICinema } from 'src/app/interfaces/ICinema';
 import { CinemaService } from 'src/app/services/cinema.service';
@@ -15,7 +15,8 @@ export class UpdateComponent {
   id!: number;
   cinemaUpdate!: ICinema
 
-  constructor(private cinemaService : CinemaService, private route: ActivatedRoute){}
+  constructor(private cinemaService : CinemaService, private route: ActivatedRoute, 
+    private router: Router){}
 
   ngOnInit() {
     this.routeSubscription = this.route.paramMap.subscribe(params => {
@@ -32,6 +33,9 @@ export class UpdateComponent {
   
   async editHandler(cinema: ICinema){
     await this.cinemaService.update(cinema, this.id).subscribe();
+    setTimeout(() => {
+      this.router.navigate([`/cinemas/${this.id}`]);
+    }, 2500);
   }
 
   ngOnDestroy() {
