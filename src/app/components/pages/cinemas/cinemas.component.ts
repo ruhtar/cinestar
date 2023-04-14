@@ -11,7 +11,6 @@ export class CinemasComponent {
 
   cinemas!: ICinema[];  
 
-  //Injecao de dependencia
   constructor(private cinemaDataService: CinemaService){}
 
   ngOnInit(){
@@ -22,6 +21,6 @@ export class CinemasComponent {
 
   delete(id : number){
       this.cinemaDataService.delete(id).subscribe();
-      this.cinemas = this.cinemas.filter(a => id !== a.id); //Remove a linha da tabela
+      this.cinemas = this.cinemas.filter(a => id !== a.id);
   }
 }

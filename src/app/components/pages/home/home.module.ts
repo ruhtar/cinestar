@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 
-
-
 @NgModule({
   declarations: [
     HomeComponent,

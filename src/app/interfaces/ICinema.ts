@@ -1,4 +1,3 @@
-//Entidade
 export interface ICinema {
     id?: number, 
     ownerName: string,

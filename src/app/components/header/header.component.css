@@ -1,6 +1,5 @@
 header {
     font-size: 30px;
-    /* background-image: linear-gradient(to bottom, #fa6464, #fcd6d6); */
     background-color: #f8d2b0;
     display: flex;
     justify-content: space-between;
@@ -12,12 +11,10 @@ header {
 header h2{
     margin-left: 20px;
     font-weight: 200;
-
 }
 
 .link-logo{
     text-decoration: none;
-    
 }
 
 .links {

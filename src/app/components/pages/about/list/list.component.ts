@@ -21,8 +21,6 @@ export class ListComponent {
   ".NET",
   "MySQL"]
 
-
-
   constructor(private check: CheckService){}
 
   addCheck(value: string){

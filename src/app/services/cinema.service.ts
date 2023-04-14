@@ -7,8 +7,6 @@ import { ICinema } from '../interfaces/ICinema';
   providedIn: 'root'
 })
 export class CinemaService {
-
-  //Injeçao de dependencia
   constructor(private http : HttpClient){}
 
   getAll(){

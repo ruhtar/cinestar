@@ -5,7 +5,6 @@ import { NewCinemaComponent } from './components/pages/new-cinema/new-cinema.com
 import { HomeComponent } from './components/pages/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
-//Router: Quais paths levam a quais components 
 const routes: Routes = [
   {path: "", component: HomeComponent },
   {path: "about", component: AboutComponent},
@@ -15,7 +14,6 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  //forRoot: so usar no módulo de rotas da aplicação.
   imports: [RouterModule.forRoot(routes)],  
   exports: [RouterModule]
 })

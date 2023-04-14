@@ -17,9 +17,7 @@ export class NewCinemaComponent {
       description: ""
     };
 
-    //Injeção de dependência
-    constructor(private cinemaService: CinemaService){
-    }
+    constructor(private cinemaService: CinemaService){}
 
   async createHandler(cinema : ICinema){
     await this.cinemaService.addCinema(cinema).subscribe();

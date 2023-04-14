@@ -7,8 +7,6 @@
     }
   } 
 
-
-
 .form-wrapper {
     animation: fade-in 1s;
     border: 2px solid #f1a484;
@@ -30,13 +28,12 @@ input{
     height: 40px;
 }
 
-
 textarea{
     resize: none;
     margin-bottom: 20px;
 }
 input::placeholder {
-    font-size: 20px; /* tamanho desejado para o placeholder */
+    font-size: 20px;
 }
 
 .validation-error p {

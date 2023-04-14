@@ -9,7 +9,6 @@ export class CheckService {
   private check : Subject<string> = new Subject<string>();
 
   setCheck(newValue : string){
-    //Notifica a todos que observam o Check que o valor dele foi modificado
     this.check.next(newValue);
   }
 
