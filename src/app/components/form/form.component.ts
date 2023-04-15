@@ -22,7 +22,7 @@ export class FormComponent {
   ngOnInit(){
     this.cinemaForm = this.formBuilder.group({
       ownerName: ["", Validators.required],
-      cpf: ["", Validators.required, cpfValidator],
+      cpf: ["", [Validators.required, cpfValidator]],
       cinemaName: ["", Validators.required],
       street: ["", Validators.required],
       description : [""]
@@ -30,13 +30,13 @@ export class FormComponent {
   }
 
 
-  get ownerName(){
+  /* get ownerName(){
     return this.cinemaForm.get("ownerName")!;
-  }
+  } */
   
-  get cpf(){
+/*   get cpf(){
     return this.cinemaForm.get("cpf")!;
-  }
+  } */
 
   get cinemaName(){
     return this.cinemaForm.get("cinemaName")!;

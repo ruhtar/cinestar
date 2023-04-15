@@ -9,8 +9,8 @@
         formControlName="ownerName" [(ngModel)]="cinemaUpdate.ownerName">
     </div>
     <!-- Div de validação: Renderização condicional -->
-    <div *ngIf="ownerName.invalid && formDir.submitted" class="validation-error">
-        <p *ngIf="ownerName.errors?.['required']">Nome obrigatório</p>
+    <div *ngIf="cinemaForm.get('ownerName')?.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="cinemaForm.get('ownerName')?.errors?.['required']">Nome obrigatório</p>
     </div>
 
     <div class="form-answers">
@@ -18,9 +18,10 @@
         <input type="text" placeholder="Informe o CPF" [(ngModel)]="cinemaUpdate.cpf"
         formControlName="cpf">
     </div>
-    <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error"><p *ngIf="cpf.errors?.['required']">CPF obrigatório</p></div>
-    <div *ngIf="cpf.invalid && formDir.submitted" class="validation-error"><p *ngIf="cpf.errors?.['cpfInvalido']">CPF inválido</p></div>
-
+    <div *ngIf="cinemaForm.get('cpf')?.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="cinemaForm.get('cpf')?.errors?.['cpfInvalido']">CPF inválido</p>
+        <p *ngIf="cinemaForm.get('cpf')?.errors?.['required']">CPF obrigatório</p></div>
+        
     <div class="form-answers">
         <label for="cinema-name">Nome do cinema: </label>
         <input type="text" placeholder="Informe o nome do cinema" 
