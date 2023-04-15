@@ -21,11 +21,11 @@ export class FormComponent {
 
   ngOnInit(){
     this.cinemaForm = this.formBuilder.group({
-      ownerName: ["", Validators.required],
+      ownerName: ["", [Validators.required, Validators.maxLength(70)]],
       cpf: ["", [Validators.required, cpfValidator]],
-      cinemaName: ["", Validators.required],
-      street: ["", Validators.required],
-      description : [""]
+      cinemaName: ["", [Validators.required, Validators.maxLength(70)]],
+      street: ["", [Validators.required, Validators.maxLength(70)]],
+      description : ["", Validators.maxLength(150)]
     });
   }
 
@@ -37,14 +37,14 @@ export class FormComponent {
 /*   get cpf(){
     return this.cinemaForm.get("cpf")!;
   } */
-
+/* 
   get cinemaName(){
     return this.cinemaForm.get("cinemaName")!;
-  }  
+  }   */
   
-  get street(){
+/*   get street(){
     return this.cinemaForm.get("street")!;
-  }
+  } */
   
   get description(){
     return this.cinemaForm.get("description")!;
