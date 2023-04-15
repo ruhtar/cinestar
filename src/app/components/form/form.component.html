@@ -9,9 +9,9 @@
         formControlName="ownerName" [(ngModel)]="cinemaUpdate.ownerName">
     </div>
     <!-- Div de validação: Renderização condicional -->
-    <div *ngIf="cinemaForm.get('ownerName')?.invalid && formDir.submitted" class="validation-error">
-        <p *ngIf="cinemaForm.get('ownerName')?.errors?.['maxlength']">Nome deve ter no máximo 70 caracteres.</p>
-        <p *ngIf="cinemaForm.get('ownerName')?.errors?.['required']">Nome obrigatório</p>
+    <div *ngIf="cinemaForm.get('ownerName')!.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="cinemaForm.get('ownerName')!.errors?.['maxlength']">Nome deve ter no máximo 70 caracteres.</p>
+        <p *ngIf="cinemaForm.get('ownerName')!.errors?.['required']">Nome obrigatório</p>
     </div>
 
     <div class="form-answers">
@@ -20,9 +20,9 @@
         formControlName="cpf">
     </div>
 
-    <div *ngIf="cinemaForm.get('cpf')?.invalid && formDir.submitted" class="validation-error">
-        <p *ngIf="cinemaForm.get('cpf')?.errors?.['cpfInvalido']">CPF inválido</p>
-        <p *ngIf="cinemaForm.get('cpf')?.errors?.['required']">CPF obrigatório</p>
+    <div *ngIf="cinemaForm.get('cpf')!.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="cinemaForm.get('cpf')!.errors?.['cpfInvalido']">CPF inválido</p>
+        <p *ngIf="cinemaForm.get('cpf')!.errors?.['required']">CPF obrigatório</p>
     </div>
 
     <div class="form-answers">
@@ -31,9 +31,9 @@
         [(ngModel)]="cinemaUpdate.cinemaName"
         formControlName="cinemaName">
     </div>
-    <div *ngIf="cinemaForm.get('cinemaName')?.invalid && formDir.submitted" class="validation-error">
-        <p *ngIf="cinemaForm.get('cinemaName')?.errors?.['maxlength']">Nome deve ter no máximo 70 caracteres.</p>
-        <p *ngIf="cinemaForm.get('cinemaName')?.errors?.['required']">Nome obrigatório</p>
+    <div *ngIf="cinemaForm.get('cinemaName')!.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="cinemaForm.get('cinemaName')!.errors?.['maxlength']">Nome deve ter no máximo 70 caracteres.</p>
+        <p *ngIf="cinemaForm.get('cinemaName')!.errors?.['required']">Nome obrigatório</p>
     </div>
 
     <div class="form-answers">
@@ -42,17 +42,17 @@
         [(ngModel)]="cinemaUpdate.street"
         formControlName="street">
     </div>
-    <div *ngIf="cinemaForm.get('street')?.invalid && formDir.submitted" class="validation-error">
-        <p *ngIf="cinemaForm.get('street')?.errors?.['maxlength']">Endereço deve ter no máximo 70 caracteres.</p>
-        <p *ngIf="cinemaForm.get('street')?.errors?.['required']">Endereço obrigatório</p>
+    <div *ngIf="cinemaForm.get('street')!.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="cinemaForm.get('street')!.errors?.['maxlength']">Endereço deve ter no máximo 70 caracteres.</p>
+        <p *ngIf="cinemaForm.get('street')!.errors?.['required']">Endereço obrigatório</p>
     </div>
 
     <div class="form-answers">
         <label for="">Descrição: </label>
         <textarea type="textarea" formControlName="description" [(ngModel)]="cinemaUpdate.description"></textarea>
     </div>
-    <div *ngIf="cinemaForm.get('description')?.invalid && formDir.submitted" class="validation-error">
-        <p *ngIf="cinemaForm.get('description')?.errors?.['maxlength']">Descrição deve ter no máximo 150 caracteres.
+    <div *ngIf="cinemaForm.get('description')!.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="cinemaForm.get('description')!.errors?.['maxlength']">Descrição deve ter no máximo 150 caracteres.
         </p>
     </div>
 
