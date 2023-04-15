@@ -16,16 +16,16 @@ export class FormComponent {
   cinemaForm!: FormGroup //Representação do formulário.
   formSucess: boolean = false;
 
-  //Injetar o FormBuilder
+  //Injetar o serviço do FormBuilder
   constructor(private formBuilder: FormBuilder){}
 
   ngOnInit(){
     this.cinemaForm = this.formBuilder.group({
-      ownerName: new FormControl("", [Validators.required]),
-      cpf: new FormControl("", Validators.compose([Validators.required, cpfValidator])),
-      cinemaName: new FormControl("", [Validators.required]),
-      street: new FormControl("", [Validators.required]),
-      description : new FormControl()
+      ownerName: ["", Validators.required],
+      cpf: ["", Validators.required, cpfValidator],
+      cinemaName: ["", Validators.required],
+      street: ["", Validators.required],
+      description : [""]
     });
   }
 
