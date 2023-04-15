@@ -1042,11 +1042,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PROGRAMAÇÃO\\Testes práticos\\projeto-angular\\api\\api\\api.csproj",
+      "projectUniqueName": "D:\\PROGRAMAÇÃO\\Testes práticos\\cinestar\\api\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "D:\\PROGRAMAÇÃO\\Testes práticos\\projeto-angular\\api\\api\\api.csproj",
+      "projectPath": "D:\\PROGRAMAÇÃO\\Testes práticos\\cinestar\\api\\api\\api.csproj",
       "packagesPath": "C:\\Users\\Arthur\\.nuget\\packages\\",
-      "outputPath": "D:\\PROGRAMAÇÃO\\Testes práticos\\projeto-angular\\api\\api\\obj\\",
+      "outputPath": "D:\\PROGRAMAÇÃO\\Testes práticos\\cinestar\\api\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Arthur\\AppData\\Roaming\\NuGet\\NuGet.Config",

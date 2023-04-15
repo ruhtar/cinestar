@@ -13,10 +13,13 @@ export class FormComponent {
   @Output() onSubmit = new EventEmitter<ICinema>(); //Saída. Enviar dados para o componente pai
   @Input() cinemaUpdate!: ICinema;
   
-  cinemaForm!: FormGroup
+  cinemaForm!: FormGroup //Representação do formulário.
   formSucess: boolean = false;
 
-  constructor(private formBuilder: FormBuilder){
+  //Injetar o FormBuilder
+  constructor(private formBuilder: FormBuilder){}
+
+  ngOnInit(){
     this.cinemaForm = this.formBuilder.group({
       ownerName: new FormControl("", [Validators.required]),
       cpf: new FormControl("", Validators.compose([Validators.required, cpfValidator])),
