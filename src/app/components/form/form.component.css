@@ -24,13 +24,19 @@ label{
 .form-answer{
     margin-bottom: 20px;
 }
-input{
+.input-form{
     height: 40px;
+    padding-left: 4px;
+    font-size: 18px;
 }
 
 textarea{
     resize: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 120px;
 }
+
 input::placeholder {
     font-size: 20px;
 }

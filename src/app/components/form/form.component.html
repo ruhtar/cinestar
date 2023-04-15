@@ -5,7 +5,7 @@
 
     <div class="form-answers">
         <label for="owner-name">Nome do proprietário: </label>
-        <input type="text" placeholder="Informe o nome do proprietário" 
+        <input type="text" placeholder="Informe o nome do proprietário" class="input-form"
         formControlName="ownerName" [(ngModel)]="cinemaUpdate.ownerName">
     </div>
     <!-- Div de validação: Renderização condicional -->
@@ -16,7 +16,7 @@
 
     <div class="form-answers">
         <label for="cpf">CPF: </label>
-        <input type="text" placeholder="Informe o CPF" [(ngModel)]="cinemaUpdate.cpf"
+        <input type="text" placeholder="Informe o CPF" [(ngModel)]="cinemaUpdate.cpf" class="input-form"
         formControlName="cpf">
     </div>
 
@@ -27,7 +27,7 @@
 
     <div class="form-answers">
         <label for="cinema-name">Nome do cinema: </label>
-        <input type="text" placeholder="Informe o nome do cinema" 
+        <input type="text" placeholder="Informe o nome do cinema" class="input-form"
         [(ngModel)]="cinemaUpdate.cinemaName"
         formControlName="cinemaName">
     </div>
@@ -38,7 +38,7 @@
 
     <div class="form-answers">
         <label for="street">Rua: </label>
-        <input type="text" placeholder="Informe o local" 
+        <input type="text" placeholder="Informe o local" class="input-form"
         [(ngModel)]="cinemaUpdate.street"
         formControlName="street">
     </div>
