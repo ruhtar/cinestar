@@ -8,7 +8,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 const routes: Routes = [
   {path: "", component: HomeComponent },
   {path: "about", component: AboutComponent},
-  {path: "cinemas", loadChildren: () => import('../app/components/pages/cinemas/cinemas.module').then(m => m.CinemasModule)},
+  {path: "cinemas", 
+    loadChildren: () => import('../app/components/pages/cinemas/cinemas.module').then(m => m.CinemasModule)},
   {path: "register", component: NewCinemaComponent},
   {path: '**', component: PageNotFoundComponent}
 ];

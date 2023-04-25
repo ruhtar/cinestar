@@ -30,22 +30,6 @@ export class FormComponent {
   }
 
 
-  /* get ownerName(){
-    return this.cinemaForm.get("ownerName")!;
-  } */
-  
-/*   get cpf(){
-    return this.cinemaForm.get("cpf")!;
-  } */
-/* 
-  get cinemaName(){
-    return this.cinemaForm.get("cinemaName")!;
-  }   */
-  
-/*   get street(){
-    return this.cinemaForm.get("street")!;
-  } */
-  
   get description(){
     return this.cinemaForm.get("description")!;
   }
