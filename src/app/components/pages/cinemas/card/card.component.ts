@@ -26,5 +26,5 @@ export class CardComponent {
       this.cinemaDataService.getById(id).subscribe((data:ICinema)=>{
         this.cinema = data;
     })
-  }
+  } 
 }

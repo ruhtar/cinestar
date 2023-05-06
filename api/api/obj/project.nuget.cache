@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JAf+MlPjuLYuOMv1J+Z99dbC+7XdmpK+1A5h06yeSQuoIUIkg9EKOsHPXuZdFoKwKwwMWW2WyjjpF1LjrtuIsA==",
+  "dgSpecHash": "EdT7A+Iedl461tR7/quCVdax4ARUJqv+7NtZ+phGKMFNJVqwdT/lyUD9yNKj1wKUszmF+O/dolFsr6C7s4Zf/Q==",
   "success": true,
-  "projectFilePath": "D:\\PROGRAMAÇÃO\\Testes práticos\\cinestar\\api\\api\\api.csproj",
+  "projectFilePath": "D:\\PROGRAMAÇÃO\\Projetos\\cinestar\\api\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Arthur\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Arthur\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.15\\microsoft.entityframeworkcore.6.0.15.nupkg.sha512",

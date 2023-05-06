@@ -4,6 +4,7 @@ import { CinemaService } from 'src/app/services/cinema.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { PageNotFoundComponent } from '../../page-not-found/page-not-found.component';
 
 const cinemaRoutes: Routes = [
   {path: '', children: [
